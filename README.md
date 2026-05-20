@@ -2,7 +2,6 @@
 This is a repository to outline my own research in AI. It will be a distilled version of hours of research.
 
 ## How to follow along (MacOS):
-Got it. Let’s get this running on your machine today. Zero servers, ~$0, and you can unplug your laptop and it still works. 
 
 This guide builds the “AI that teaches you to use AI” from the last message. Total time: ~1 hour.
 
@@ -16,14 +15,11 @@ A local chatbot that:
 
 ### **Step 0: Check what you need — 2 min**
 
-**Hardware**: Any laptop from 2018+ works. Mac, Windows, Linux. 8GB RAM minimum.  
-**Software**: None yet. We’ll install 2 free tools.  
-**Money**: $0. Optional: $5 if you want fallback cloud access later.  
-**Power**: Uses less electricity than a LED bulb.
+**Hardware**: Any laptop from 2018+ works. Mac, Windows, Linux. 8GB RAM minimum. Mac Preferred
 
-### **Step 1: Install the local AI brain — 10 min**
+## **Step 1: Install the local AI brain — 10 min**
 
-We’ll use Ollama + Phi-3 Mini. It’s 2GB, runs on CPU, and smart enough to tutor.
+We’ll use Ollama + Phi-3 Mini. It’s 2GB, runs on CPU, and is smart enough to tutor.
 
 **Mac / Linux:**
 1. Open Terminal
@@ -176,17 +172,6 @@ Create `mistakes.md` in the folder. Every time it hallucinates, you paste the Q+
 **Level 3: Share it, still $0**  
 Run `streamlit run app.py --server.headless true` on your laptop. Give friends your IP address. Or deploy to Hugging Face Spaces free tier: it sleeps when not used = 0W idle cost.
 
-### **Electricity + Cost Summary**
-
-| Thing | Cost | Power |
-| --- | --- | --- |
-| Ollama + Phi-3 | $0 | 5-15W when answering, 0W idle |
-| Wikipedia API | $0 | Negligible |
-| Streamlit | $0 | Negligible |
-| **Total** | **$0/mo** | **~0.01 kWh per hour of use** |
-
-For comparison: Leaving a 60W bulb on for 1hr = 0.06 kWh. You can tutor yourself for 6 hours for the same energy.
-
 ### **Common install issues + fixes**
 
 | Problem | Fix |
@@ -202,7 +187,5 @@ You now have v0.1. Next 3 upgrades, still $0:
 1. **Add “Red Team Mode”**: Button that switches system prompt to “Try to trick me, then explain the lesson.”
 2. **Add “Prompt Genealogy”**: Show the user how changing 1 word in their prompt changes the answer.
 3. **Add certificates**: After 10 sessions where `human_words > ai_words`, unlock a “Level 1: AI Skeptic” badge.
-
-Want me to write the code for “Red Team Mode” next? Or help you customize the system prompt for a specific skill like “how to verify AI claims”?
 
 You’re 1 hour away from having an AI that’s on your side, not your electric bill.
