@@ -45,7 +45,7 @@ It should say it doesn’t know or doesn’t have data past its cutoff. If it ma
 
 We’ll use Streamlit because it’s 1 file = 1 app.
 
-1. **Install Python**: If you don’t have it, download from https://python.org. Check “Add to PATH” during install.
+1. **Install Python**: If you don’t have it, download it from https://python.org. Check “Add to PATH” during install.
 2. **Open Terminal / Command Prompt** and run:
    ```bash
    pip install streamlit ollama wikipedia
@@ -181,11 +181,7 @@ Run `streamlit run app.py --server.headless true` on your laptop. Give friends y
 | Model too slow | Use `phi3:mini` not `phi3:medium`. Close Chrome tabs to free RAM |
 | Wikipedia errors | It’s fine. Code has `try/except`. It’ll just say “no source found” |
 
-### **What to build next**
-
-You now have v0.1. Next 3 upgrades, still $0:
-1. **Add “Red Team Mode”**: Button that switches system prompt to “Try to trick me, then explain the lesson.”
-2. **Add “Prompt Genealogy”**: Show the user how changing 1 word in their prompt changes the answer.
-3. **Add certificates**: After 10 sessions where `human_words > ai_words`, unlock a “Level 1: AI Skeptic” badge.
+# Run App
+streamlit run app.py
 
 You’re 1 hour away from having an AI that’s on your side, not your electric bill.
